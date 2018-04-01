@@ -2,12 +2,16 @@
 
 ## [1.7.16-SNAPSHOT]
 
-
 ### Fixed
+
+- Calling `close()` inside `InternalWindow` would also close the parent
+- `placeholder` for list type controls should not require list type parameter
+- Added warning log message when `WorkspaceApp` is called with a `Workspace` subclass as main view paramter
+- Fix bug caused by not properly removing nodes from `ToolBar`
 
 ### Changes
 
-- Kotlin 1.2.30
+- Kotlin 1.2.31
 - Workspace.navigateForward() made public
 - Added missing pseudoclasses to CSS DSL
 
@@ -17,6 +21,7 @@
 - Added add/remove/toggle class for Tab
 - ContextMenu.radiomenuitem (https://github.com/edvin/tornadofx/issues/646)
 - mutableList can now be bound to an ObservableMap
+- CssSelectionBlock now has all relation selectors (see `CssSubRule.Relation`)
 
 ## [1.7.15]
 

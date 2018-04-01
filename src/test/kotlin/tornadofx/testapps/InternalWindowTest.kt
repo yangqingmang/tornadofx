@@ -1,6 +1,5 @@
 package tornadofx.testapps
 
-import javafx.scene.control.Alert.AlertType.CONFIRMATION
 import tornadofx.*
 
 class InternalWindowTestApp : App(InternalWindowTest::class)
@@ -36,7 +35,6 @@ class Editor : View("Editor") {
     }
 
     private fun save() {
-        alert(CONFIRMATION, "Saved!", "You did it!")
         close()
     }
 }
